@@ -37,12 +37,11 @@ body {
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
-h1 {
+h1, h3 {
     font-family: 'Merriweather', sans-serif;
-    font-size: 37px;
 }
 
-h2 {
+h2  {
     font-size: 22px;
 }
 
@@ -84,6 +83,10 @@ h2 {
 .header-content {
     margin: 40px 0 90px;
     padding: 30px 0;
+}
+
+.header-content h1 {
+    font-size: 37px;
 }
 
 .header-content h2 {
@@ -135,14 +138,14 @@ h2 {
 }
 
 .introduction-text {
-    margin: 80px 0;
+    margin: 80px 0 30px;
 }
 
 .introduction h2 {
     font-family: 'Merriweather', sans-serif;
-    font-size: 25px;
+    font-size: 26px;
     color: var(--purple);
-    padding: 15px 0;
+    padding: 14px 0;
 }
 
 .introduction p {
@@ -152,5 +155,81 @@ h2 {
 .introduction a {
     text-decoration: none;
 }
+
+/* ------------------- 4.3. Articles -------------------------------- */
+
+.article-section {
+    background-color: var(--light-grey);
+}
+
+.article-section-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 45px 125px;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0 45px;
+}
+
+.article-1, .article-3 {
+    flex-direction: row-reverse;
+}
+
+.article-2 .article-text {
+    padding: 0 40px 0 60px;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: left;
+    padding: 0 35px ;
+}
+
+.article-text h3 {
+    font-size: 25px;
+}
+
+.article-text h3, .article-text p {
+    padding: 25px  0;
+}
+
+.article-text a {
+    color: var(--purple);
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.article-text .icon {
+    width: 45px;
+    padding: 5px 0;
+}
+
+.image-wrapper {
+    flex-basis: 640px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    align-items: center;
+}
+
+.work-image {
+    width: 100%;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3)
+}
+
+/* ------------------- 4.4. Form -------------------------------- */
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
