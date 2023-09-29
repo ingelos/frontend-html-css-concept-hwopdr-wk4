@@ -33,6 +33,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--black-main-text);
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -208,6 +209,7 @@ h2  {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .article-text .icon {
@@ -228,7 +230,51 @@ h2  {
     box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3)
 }
 
-/* ------------------- 4.4. Form -------------------------------- */
+/* -------------------4.4. Service --------------------------------*/
+
+.service-outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px dotted deeppink;
+}
+
+.service-inner-container {
+    flex-basis: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    margin: 35px 30px 40px;
+    padding: 35px 60px;
+    border: 2px dotted greenyellow;
+}
+
+.service-article {
+    flex-basis: 300px;
+    text-align: left;
+    padding: 25px 25px 32px;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border: 1px solid var(--purple);
+    box-shadow: 0 10px 12px rgb(0, 0, 0, 0.1)
+}
+
+.service-article h3 {
+    color: var(--purple);
+    font-size: 19px;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.service-article img {
+    max-width: 65px;
+    margin: 10px 0;
+}
+
+/* ------------------- 4.5. Form -------------------------------- */
 
 
 
