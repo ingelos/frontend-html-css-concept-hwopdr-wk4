@@ -65,6 +65,17 @@ h2  {
     margin: 20px 0;
 }
 
+.button {
+    background-color: var(--pink);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 25px rgb(0, 0, 0, 0.5);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
@@ -111,17 +122,11 @@ h2  {
     list-style: none;
 }
 
+
+
 .header-btn {
-    background-color: var(--pink);
-    color: var(--white);
-    border: none;
-    border-radius: 30px;
-    box-shadow: 5px 5px 25px rgb(0, 0, 0, 0.5);
     padding: 20px 30px;
     margin: 10px 0;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .header-squiggle {
@@ -236,7 +241,6 @@ h2  {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px dotted deeppink;
 }
 
 .service-inner-container {
@@ -246,9 +250,8 @@ h2  {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 40px;
-    margin: 35px 30px 40px;
+    margin: 35px 30px 50px;
     padding: 35px 60px;
-    border: 2px dotted greenyellow;
 }
 
 .service-article {
@@ -266,7 +269,6 @@ h2  {
     color: var(--purple);
     font-size: 19px;
     padding-bottom: 15px;
-    letter-spacing: 0.5px;
 }
 
 .service-article img {
@@ -276,6 +278,64 @@ h2  {
 
 /* ------------------- 4.5. Form -------------------------------- */
 
+.contact-section {
+    background: linear-gradient(150deg, rgba(72,69,228,1) 0%, rgba(72,69,228,1) 43%, rgba(87,34,205,1) 100%);
+    color: var(--white);
+}
 
+.contact-section h2 {
+    font-family: 'merriweather', sans-serif;
+    font-size: 37px;
+    padding: 75px 0 20px;
+}
+
+.contact-section h4 {
+    font-weight: 100;
+    padding-bottom: 25px;
+}
+
+.contact-form {
+    display: grid;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    padding: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 32px;
+}
+
+#message {
+    margin-bottom: 30px;
+}
+
+label {
+    text-align: start;
+}
+
+.form-btn {
+    padding: 20px 60px;
+    margin-bottom: 30px;
+}
+
+::placeholder {
+    padding: 0 0 0 15px;
+}
+
+/* ---------------------4.6 Footer -------------------------------*/
+
+footer {
+    color: var(--white);
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    font-size: 12px;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
