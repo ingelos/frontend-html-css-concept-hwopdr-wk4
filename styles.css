@@ -69,7 +69,7 @@ h2  {
     background-color: var(--pink);
     color: var(--white);
     border: none;
-    border-radius: 30px;
+    border-radius: 40px;
     box-shadow: 5px 5px 25px rgb(0, 0, 0, 0.5);
     font-size: 11px;
     text-transform: uppercase;
@@ -103,6 +103,7 @@ h2  {
 
 .header-content h2 {
     padding: 20px 0;
+    font-weight: 100;
 }
 
 .header-nav {
@@ -121,8 +122,6 @@ h2  {
     padding: 0 15px;
     list-style: none;
 }
-
-
 
 .header-btn {
     padding: 20px 30px;
@@ -303,8 +302,7 @@ h2  {
 }
 
 input[type="text"], input[type="email"], textarea {
-    display: block;
-    padding: 15px 0;
+    padding: 15px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 32px;
 }
@@ -322,9 +320,6 @@ label {
     margin-bottom: 30px;
 }
 
-::placeholder {
-    padding: 0 0 0 15px;
-}
 
 /* ---------------------4.6 Footer -------------------------------*/
 
@@ -339,3 +334,183 @@ footer {
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+
+@media screen and (max-width: 576px) {
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    .header-content {
+        margin: 80px 0 150px;
+        padding: 35px 0;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header-nav ul {
+        flex-basis: 425px;
+        justify-content: space-between;
+        padding: 10px 5px 0;
+    }
+
+    .header-content h2 {
+        font-size: 28px;
+        font-weight: 200;
+        margin: 10px 0;
+    }
+
+    .header-btn {
+        padding: 25px 35px;
+        margin: 10px 0 0;
+        font-size: 14px;
+    }
+
+    .header-squiggle img {
+        width: 90%;
+    }
+
+    .introduction-text {
+        margin: 100px 0 30px;
+        padding: 20px 0;
+    }
+
+    .introduction h2 {
+        font-family: 'Merriweather', sans-serif;
+        font-size: 25px;
+        color: var(--purple);
+    }
+
+    .introduction p {
+        font-size: 22px;
+        margin: 50px 0 0;
+    }
+
+    .button {
+        background-color: var(--pink);
+        color: var(--white);
+        border: none;
+        border-radius: 40px;
+        box-shadow: 5px 5px 25px rgb(0, 0, 0, 0.5);
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 30px 45px;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .article-section-container {
+        margin: 70px 20px;
+    }
+
+    .article-text {
+        width: 500px;
+        flex-basis: 180px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .article-text h3 {
+        font-size: 35px;
+    }
+
+    .article-text p {
+        font-size: 20px;
+    }
+
+    .article-text a {
+        color: var(--purple);
+        font-size: 11px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    .article-text .icon {
+        width: 65px;
+        padding: 5px 0;
+    }
+
+    .article-text a {
+        font-size: 16px;
+    }
+
+    .article-2 .article-text {
+        padding: 0;
+    }
+
+    .article-text h3, .article-text p {
+        padding: 35px 0;
+    }
+
+    .image-wrapper {
+        flex-basis: 400px;
+        padding: 0;
+    }
+
+    .service-inner-container {
+        flex-basis: 550px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-direction: column;
+        margin: 80px 0 20px;
+    }
+
+    .service-article {
+        flex-basis: 400px;
+        padding: 40px;
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    .service-article h3 {
+        color: var(--purple);
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .service-article img {
+        max-width: 85px;
+    }
+
+    .contact-form {
+        padding: 0;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    .contact-section {
+        padding: 30px 0 60px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 25px;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+
+    .form-btn {
+        padding: 25px 85px;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
